@@ -1,0 +1,65 @@
+<html>
+<head>
+
+
+</head>
+<body>
+
+
+	<!--<p>Enter the time</p>-->
+	<!--<input name="kee" type="text">-->
+	<button onclick="myFunction()">submit</button>
+	<p id="demo"></p>
+	<script>
+f/*unction ageFun(){
+	var age = 
+if (age<=18 ) {
+ text = "you cannot drive";
+
+}
+else if(age>=18 && age<=30){
+ text = "you can drive";
+
+}else{
+text = "you can preety much do anything";
+}
+document.getElementById("kee").innerHTML = text;
+
+
+
+
+}
+*/
+function myFunction(){
+	var food ;
+	var time = new Date().getHours();
+	if(time <10){
+
+		food = "Breakfast";
+	}
+	else if(time>10 && time <16){
+		food = "lunch";
+	}
+	else if(time>16 && time<21){
+		food = "snacks";
+	}
+	else{
+		food ="dinner";
+	}
+
+	document.getElementById("demo").innerHTML = food;
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

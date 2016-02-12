@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	#t1, th,td{
+		border:1px solid;
+		padding: 10px;
+		border-collapse: collapse;   
+	}
+	th{
+		text-align: center;
+	}
+	#t1 tr:nth-child(even) {
+		background-color: #eee;
+	}
+	#t1 tr:nth-child(odd) {
+		background-color: #fff;
+	}
+
+	</style>
+</head>
+<body>
+	
+	<table align="center" id="t1">
+		<caption>User Form</caption>
+
+
+	<!--<thead>
+		<tr>
+			<th colspan="1" text-align="center">User Form </th>
+			</tr>
+		</thead>-->
+		<tbody>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username" placeholder="Username"/></td>
+			</tr>
+			<tr>
+				<td>Password</td> 
+				<td><input type="text" name="password" placeholder="password"/></td>
+			</tr>
+			<tr>
+				<td>Confirm Password </td>
+				<td><input type="text" name="password1" placeholder="password"/></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type= "radio" name ="sex">female 
+					<input type= "radio" name ="sex">male
+				</td>
+			</tr>
+
+			<tr>
+				<td>Employer</td>
+				<td><select name = "">
+					<option value="none"></option>
+					<option value="Raja">Raja</option>
+					<option value="Surendar">surendar</option>
+					<option value="Mohan">Mohan</option>
+					<option value="Naveen">Naveen</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Location</td>
+			<td>
+				<select name = "">
+					<option value="none"></option>
+					<option value="Sc">School</option>
+					<option value="Un">University</option>
+					<option value="Of">Office</option>
+					<option value="Work">Workplace</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Details</td>
+			<td><TEXTAREA Name="Details" id="Details"> </TEXTAREA>	
+			</td>
+		</tr>
+		<tr>
+			<td><input type = "checkbox"></td><td>i accept the terms & conditions.</td>
+		</tr>
+
+		<tr> <td colspan="1"></td><td><input colspan="1" type = "submit" value="submit"></td></tr>
+	</tbody>
+</table>
+</body>
+</html>

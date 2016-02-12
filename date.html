@@ -1,0 +1,49 @@
+<html>
+<body>
+
+    <button onclick="myFunction()">first</button>
+    <button onclick="dayFunction()">second</button>
+    <button onclick="myFunction()">time</button>
+    <p id="kee"></p>
+    <p id="demo"></p>
+    <p id="kee1"></p>
+
+    <script>
+    function myFunction(){
+    var date = new Date();
+    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    document.getElementById("kee").innerHTML = days[date.getDay()];
+    document.getElementById("kee1").innerHTML = date.getTime();
+}
+function dayFunction(){
+var day;
+switch (new Date().getDay()) {
+    case 0: 
+    day = "sunday"; 
+    break;
+    case 1: 
+    day ="Monday";
+    break;
+    case 2: 
+    day ="Tuesday";
+    break ;
+    case 3: 
+    day =" Wednesday";
+    break ;
+    case 4:
+    day ="Thursday";
+    break;
+    case 5:
+    day = "Friday";
+    break;
+    case 6:
+    day ="Saturday";
+    break;
+}
+
+document.getElementById("demo").innerHTML = day;
+}
+</script>
+
+</body>
+</html>

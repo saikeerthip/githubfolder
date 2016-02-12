@@ -1,0 +1,46 @@
+<html>
+<head>
+
+
+</head>
+<body>
+	<p id="demo"></p>
+	<form name="ageForm" action ="" onsubmit="return ageFun()" method="post">
+		<p>Enter your age</p>
+		<input name="kee" type="text">
+		<input type="submit" value="submit">
+	</form>
+	<script>
+	function ageFun(){
+		var age = document.forms["ageForm"]["kee"].value;
+		if (var age<=18 ) {
+			var text = "you cannot drive";
+
+		}
+		else if(var age>=18 && age<=30){
+			text = "you can drive";
+
+		}else if(){
+			text = "you can preety much do anything";
+		}
+document.getElementById("demo").innerHTML = text;
+return text;
+
+
+
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

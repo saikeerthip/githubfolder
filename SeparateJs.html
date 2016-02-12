@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<input id="kee">
+	<p id="keer">Hello JavaScript</p>
+
+	<script>
+	function myFunction(){
+		var inputGiven, outputSent,note;
+		inputGiven = document.forms["myForm"]["fname"].value;
+		if(inputGiven!="keerthi"){
+			alert("username is ok");
+		}
+		else{
+			alert("username is wrong");
+		}
+		return false;
+
+
+	}
+	</script>
+	<form name="myForm" action="" onsubmit = "return myFunction() method="post">
+		Name <input type="text" name="fname">
+		<input type="submit" value="submit">
+
+
+
+
+	</form>
+
+
+
+
+</body>
+</html>
