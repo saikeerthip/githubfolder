@@ -13,8 +13,14 @@ var dog = {type:"pet" , color:"white" , name:"puppy"};
 document.getElementById("demo").innerHTML = dog.name;
 document.getElementById("kee").innerHTML = dog.type;
 document.getElementById("deo").innerHTML = dog.color;
+dog.walk = function(){
 
+console.log("this is a function");
+
+}
 </script>
+
+<button id="kee2" onclick="dog.walk()"></button>
 
 </body>
 </html>
