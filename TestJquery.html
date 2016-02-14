@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type = "text/javascript" src="js/jquery-2.2.0.min.js"></script>
+		<script>
+		$(document).ready (function() {
+			$("p").hide();
+			$("#intro1").click(function(){
+			$("#para1").fadeIn();        
+			});
+			$("#intro2").click(function(){
+			$("#para2").fadeIn();        
+			});
+			$("#intro3").click(function(){
+			$("#para3").fadeIn();        
+			});
+		});
+		</script>
+	</head>
+	<body>
+	<h1 id="intro1">Heading 1</h1>
+		<p id="para1">If you click on the "Hide" button, I will disappear.</p>
+	<h2 id="intro2" >Heading 2</h2>
+		<p id="para2">I will disappear. </p>
+	<h3 id="intro3" >Heading 3</h3>
+		<p id="para3">I will disappear.</p>
+	</body>
+</html>
