@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<button type="button" onload="pushFun()">click me</button><br/>
+	<button type="button" onmouseover="myFunction()">over</button><br/>
+	<button type="button" ondblclick="popFun()">pop</button>
+	
+	<button type="button" onclick="shiftFun()">add</button>
+	<p id="kee"></p>
+	<p id="kee1"></p>
+	<p id="kee2"></p>
+	<p id="kee3"></p>
+	<p id="kee4"></p>
+	<script>
+	var ar = ["apple","ball", "cat","egg","fish"];
+	document.getElementById("kee").innerHTML = ar.length;
+	document.getElementById("kee").innerHTML = ar;
+
+	function pushFun(){
+		ar.push("dog")
+		document.getElementById("kee").innerHTML = ar;
+
+	}
+	function myFunction(){
+
+		document.getElementById("kee1").innerHTML = ar.length;
+	}
+	function popFun(){
+		ar.pop()
+		document.getElementById("kee2").innerHTML = ar;
+	}
+	window.alert(ar.length);
+	function shiftFun(){
+		ar.shift();
+		document.getElementById("kee3").innerHTML = ar;
+		ar.unshift("glass");
+		document.getElementById("kee4").innerHTML = ar;
+	}
+
+	</script>
+
+</body>
+</html>

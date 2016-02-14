@@ -1,0 +1,46 @@
+table#t1 th,td{
+		border:1px ;
+		padding: 10px;
+		border-collapse: collapse;  
+		border-style: ridge;
+		
+		
+	}
+	
+	#t1 tr:nth-child(even) {
+		background-color: #ffccff;
+	}
+	#t1 tr:nth-child(odd) {
+		background-color: #ccffcc;
+	}
+	table#t1, th{
+		background-color: #ff66b3;
+
+
+	}
+
+body#bod{
+
+	
+   
+    background:url(http://aptech-sem4-122009.googlecode.com/svn/trunk/Seminar/JSP-Servlets/HTML%20&%20CSS/Seminar%202%20Demo_2/images/background.jpg);
+    background-repeat: no-repeat;
+}
+#sub{
+
+	background-color: #45a049;
+	padding: 1px;
+	border-radius: 1px;
+		width: 60px;
+
+}
+#res{
+
+	background-color: #ff1a1a;
+	padding: 1px;
+	border-radius: 2px;
+	width: 60px;
+}
+
+
+
