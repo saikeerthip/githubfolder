@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+<head>
+	
+</head>
+<body>
+	<p>Example of adding many events to a single event listener element</p>
+	<button id = "kee" type="button">clickme</button>
+	<p id="demo">given text</p>
+<script type="text/javascript">
+	var x = document.getElementById("kee");
+	x.addEventListener("click", myFun1);
+	x.addEventListener("click", myFun2);
+	x.addEventListener("click", myFun3);
+	function myFun2(){
+		document.getElementById("demo").innerHTML = "the text is changed when you click the button";
+	}
+
+	function myFun1(){
+		alert("first event occured");
+
+	}
+	
+	function myFun3(){
+		document.write("hello world!!")
+		console.log("thats it!!");
+
+	}
+	</script>
+
+	
+
+
+
+</body>
+</html>

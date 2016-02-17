@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Keerthi Web Page</title>
+	<link rel = "stylesheet" type="text/css" href ="BasicEvents.css"/>
+	<script type="text/javascript" src="BasicEvents.js"></script>
+</head>
+<body id="bod">
+	<form onsubmit="submitInput()" action="https://google.com/">
+	
+	<table align="center" id="t1">
+		<thead>
+
+<tr>
+
+<th colspan="1"></th><th>User Form</th>
+
+</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Firstname</td>
+				<td><input type="text" id="fn" name="firstname" placeholder="firstname"   onkeydown = "keyFunction1(this)"/></td>
+			</tr>
+			<tr>
+				<td>Lastname</td>
+				<td><input type="text" id="ln" name="lastname"  placeholder="lastname" onchange="blurFun1()" /></td>
+			</tr>
+			<tr>
+				<td>Password</td> 
+				<td><input type="password" id="psw" name="password"   placeholder="password"  onfocus="changeBackground(this)"/></td>
+			</tr>
+			<tr>
+				<td>Confirm Password </td>
+				<td><input type="password" id="psw1" name="password1" size ="20" placeholder="password"/></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type= "radio" name ="sex">Female 
+					<input type= "radio" name ="sex">Male
+				</td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" id="phn" name="phone" size ="20" onkeypress="keyFunction2(this)"/></td>
+			</tr>
+
+
+		<tr>
+			<td>Location</td>
+			<td>
+				<select id = "place" onchange="changeLocation()">
+					<option value="none">select</option>
+					<option value="NJ">New Jersey</option>
+					<option value="NY">New York</option>
+					<option value="IL">Illinois</option>
+					<option value="CA">California</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Details</td>
+			<td><TEXTAREA Name="Details" id="Details" onselect="selectText()"> </TEXTAREA>	
+			</td>
+		</tr>
+		<tr>
+			<td><input type = "checkbox"></td><td>i accept the terms & conditions.</td>
+		</tr>
+
+		<tr>
+		 <td><input size="20" type = "reset" id="res" value="Reset" onreset="resetFun()"/></td>
+			<td><input size="20" type = "submit" id="sub" value="Submit"/></td>
+		</tr>
+	</tbody>
+</table>
+</form>
+<p id="demo"></p>
+</body>
+</html>

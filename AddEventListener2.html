@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+<head>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+
+	<button id="but" type="button">ClickMe</button>	
+	<p id="demo">some sample test to test the code</p>
+	<input id="in">
+	<script> 
+	var x = document.getElementById("but");
+	x.addEventListener("mouseover", myFunction1);
+	x.addEventListener("dblclick", myFunction2);
+	x.addEventListener("click", myFunction3);
+	x.addEventListener("mouseout", myFunction4);
+	x.addEventListener("contextmenu", myFunction5);
+
+	function myFunction1(){
+		document.getElementById("demo").innerHTML = "this is the text which is changed";
+	}
+	function myFunction2(){
+		alert("second event occured");
+	}
+	function myFunction3(){
+		var text = document.getElementById("in");
+		text.style.fontSize = "25px";
+		text.style.color = "red";
+
+	} 
+	function myFunction4(){
+		document.write(10+9 + " ");
+		document.write(9<4);
+		console.log("this is the last event occured");
+
+	}
+	function myFunction5(){
+		console.log("some text");
+		//evn.preventDefault();
+
+	}
+
+
+
+
+	</script>
+
+
+
+
+
+</body>
+</html>
