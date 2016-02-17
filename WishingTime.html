@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>AmarWebPage</title>
+		<script type = "text/javascript" src="js/jquery-2.2.0.min.js"></script>		
+		<script>
+		$(document).ready (function(){
+			$("p").hide();			
+			$("#intro").click (function(){
+				$(".GoodDayMessage").fadeIn(); 				
+				var now = new Date();
+				var goodDay = $('p[class="GoodDayMessage"]');
+				i = now.getHours();
+				if(( i >= 12) && (i <= 18))								
+					goodDay.text('Good Afternoon!');				
+				else if(( i > 18 ) && (i <= 22))
+					goodDay.text('Good Evening!');					
+				else if(( i > 22 ) && (i <= 5))
+					goodDay.text('Good Night!');	
+			});			
+		});
+		</script>
+	</head>	
+	<body>	
+		<h1 id="intro">Click for Good Day Message</h1>
+		<p class="GoodDayMessage">Good Morning!</p>	
+	</body>	
+</html>
+	
+	

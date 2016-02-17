@@ -1,0 +1,51 @@
+input {
+    padding: 10px;
+    width: 50%;
+}
+h1 {
+	color: #259aad;
+    
+}
+button {
+    background: none repeat scroll 0 0 #259aad;
+    margin-left: 41px;
+    width: 70%;
+	border: medium none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 11px 43px;
+}
+.left {
+	color: #259aad;
+    float: left;
+    width: 831px;
+}
+.right {
+    background: none repeat scroll 0 0 #fafafa;
+    float: right;
+    height:400px;
+    padding: 20px;
+    width: 399px;
+}
+.right span {
+    color: #000000;
+    float: left;
+    margin-right: 10px;
+    width: 30%;
+	margin-top:5px;
+}
+.form-col {
+    float: left;
+    margin: 10px;
+    width: 100%;
+}
+.footer {
+    border-top: 2px solid #f4f3f3;
+    float: left;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}

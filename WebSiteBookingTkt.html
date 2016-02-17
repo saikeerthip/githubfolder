@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>AmarModified</title>
+		<link rel="stylesheet" href="css/style1.css">
+		<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">		
+		<script type = "text/javascript" src="js/jquery-2.2.0.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		
+		<script>		
+			$(function() {
+				$( "#datepicker-start" ).datepicker({
+					showWeek:true,
+					showAnim: "slide",
+					minDate: 0,
+					maxDate: "+60D",
+					onSelect: function(selected) {
+						$("#datepicker-end").datepicker("option","minDate", selected)
+					}
+				});
+				
+				$( "#datepicker-end" ).datepicker({
+				   showWeek:true,               
+				   showAnim: "slide",
+				   minDate: +1,
+				   maxDate:"+120D",
+				   onSelect: function(selected) {
+						$("#datepicker-start").datepicker("option","maxDate", selected)
+				   }
+				});
+			});
+		</script>		
+	</head>
+	<h1>
+	<center>
+	Booking A Ticket	</center>			
+	</h1>
+	<body>			
+		<div class="right">
+			<form action="#" method="post">
+				<div class="form-col">
+					<span>DEPART</span>
+					<input type="text" class="datepicker" id="datepicker-start" placeholder = "Select Depart Date"  value="" >
+				</div>
+				<div class="form-col">
+					<span>RETURN</span>
+					<input  type="text" class="datepicker" id="datepicker-end" placeholder = "Select Return Date"  value="" >
+				</div>
+				
+				<div class="form-col">
+					<button type="submit" class="btn1">BOOK NOW</button>
+				</div>
+			</form>
+		</div>			
+		<div class="left">
+			Check for the Ticketing Agency directions:
+		</div>
+		<div style="height:200px; width:67.3%; float:left;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3105.1503941510714!2d-77.03653!3d38.897676000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b76bf!2sThe+White+House!5e0!3m2!1sen!2sin!4v1414838787348" width="100%" height="420" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="footer">
+			&copy; Designed By Amar
+		</div>	
+	</body>	
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>AmarWebPage</title>
+		<script type = "text/javascript" src="js/jquery-2.2.0.min.js"></script>
+		<script>
+		$(document).ready (function() {					
+				$(".testbutton").click(function() {
+					$(this).css("background-color","orange");
+				});
+				$("#testbutton1").click(function() {
+					$("div").css("background-color","yellow");
+				});
+				$("#testbutton4").click(function() {
+					$("div > p").css("background-color","red");
+				});
+				$("#testbutton5").click(function() {
+					$("div > p:first-child").css("background-color","purple");
+				});
+				$("#testbutton6").click(function() {
+					$("div > p:last-child").css("background-color","pink");
+				});
+				$("#testbutton7").click(function() {
+					$("div strong").css("background-color","red");
+				});
+				$("#testbutton8").click(function() {
+					$("p:even").css("background-color","purple");
+				});
+				$("#testbutton2").click(function() {
+					$("p").css("background-color","blue");
+				});
+				$("#testbutton3").click(function() {
+					$("*").css("background-color","green");
+				});			
+		});
+		function myFunction() {
+			location.reload(false);
+		}
+		</script>
+	</head>
+	<body>
+		<input class= "testbutton" id="testbutton1" type="button" value="Test first 2 lines" onblur="myFunction()" />
+		<input class= "testbutton" id="testbutton4" type="button" value="Test dblchild color" onblur="myFunction()" />
+		<input class= "testbutton" id="testbutton5" type="button" value="Test first child" onblur="myFunction()" />
+		<input class= "testbutton" id="testbutton6" type="button" value="Test last child" onblur="myFunction()" />
+		<input class= "testbutton" id="testbutton7" type="button" value="Test decendent element"onblur="myFunction()" />
+		<input class= "testbutton" id="testbutton8" type="button" value="Test even" onblur="myFunction()" />
+		<input class= "testbutton" id="testbutton2" type="button" value="Test all 4 lines" onblur="myFunction()" />
+		<input class= "testbutton" id="testbutton3" type="button" value="Test page background" onblur="myFunction()" />
+		
+		<div>
+			<p> This is the <strong>first</strong> line of the text.</p>
+			<p> This is the <strong>second</strong> line of the text.</p>
+		</div>
+			<p> This is the <strong>third</strong> line of the text.</p>
+			<p> This is the <strong>fourth</strong> line of the text.</p>
+	</body>
+</html>
