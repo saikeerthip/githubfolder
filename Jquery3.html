@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#kee,#kee1").focus(function(){
+			$(this).css("color","cyan");
+		});
+		$("#kee").blur(function(){
+			$(this).css("color","violet");
+		});
+
+		
+		$("#kee1").blur(function(){
+			$(this).css("background" , "pink");
+
+
+		});
+		$("#but").click(function(){
+			$(this).css("background","#73AD21");
+			$(this).css("color","#F1F1F1");
+
+		});
+
+	});
+	</script>
+</head>
+<body>
+	<table>
+		<tr><td>
+			Name:</td><td> <input id="kee" type="text" name="fullname"></td></tr>
+			<tr>
+				<td>Email:</td> <td><input id="kee1" type="text" name="email"></td></tr>
+				<tr rowspan="1"></tr>
+				<tr>
+					<td colspan="1"></td><td><button id="but">clickme</button></td></tr>
+
+				</body>
+				</html>

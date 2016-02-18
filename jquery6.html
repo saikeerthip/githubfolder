@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#but").click(function(){
+			$("#kee").fadeTo("slow", "0.34");
+			$("#kee1").fadeOut(3000);
+			$("#kee2").animate({left: '250px',
+				opacity: '0.5',
+				height: '120px',
+				width:'120px'} ,"slow").animate({left: '0'});
+		});
+
+	});
+	</script>
+</head>
+<body>
+
+	<p>Demonstrate fadeOut() with different parameters.</p>
+
+	<button id="but">ClickMe</button><br><br>
+
+	<div id="kee" style="width:80px;height:80px;background-color:red;"></div><br>
+	<div id="kee1" style="width:80px;height:80px;background-color:green;"></div><br>
+	<div id="kee2" style="width:80px;height:80px;background-color:blue;position:absolute;"></div>
+
+</body>
+</html>
